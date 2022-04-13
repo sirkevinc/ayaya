@@ -3,19 +3,69 @@
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #000;
-  height: 100vh;
+  /* justify-content: center;
+  align-items: center; */
 }
 
-.main {
-  padding: 5rem 0;
-  flex: 1;
+.title__container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+  color: #fff;
+}
+.title {
+  line-height: 1.15;
+  font-size: 4rem;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+.fadeInText {
+  animation: fadeIn linear 4s;
+  -webkit-animation: fadeIn linear 4s;
+  -moz-animation: fadeIn linear 4s;
+  -o-animation: fadeIn linear 4s;
+  -ms-animation: fadeIn linear 4s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.main {
+  color: #fff;
+  /* width: 100%;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center; */
 }
 
 .footer {
@@ -34,30 +84,15 @@
   flex-grow: 1;
 }
 
-.title {
-  margin: auto;
-  line-height: 1.15;
-  font-size: 4rem;
-  background: #3A3B3C;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
 
-.title,
-.description {
-  text-align: center;
-}
-
-/* .code {
+.code {
   background: #fafafa;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
-} */
+}
 
 
 .grid {
@@ -81,10 +116,10 @@
   width: 45%;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
+.content p {
+  color: #fff;
 }
+
 
 .card h2 {
   margin: 0 0 1rem 0;
